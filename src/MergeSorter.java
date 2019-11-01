@@ -1,5 +1,5 @@
-public class MergeSort {
-    public static void MergeSorter(int[] list) {
+public class MergeSorter {
+    public static void sort(int[] list) {
         final long startTime = System.nanoTime();
 
         split(list);
@@ -7,7 +7,7 @@ public class MergeSort {
         // calculate the running time
         final long duration = System.nanoTime() - startTime;
         // display the needed time for the program to run
-        System.out.println( " " + NanoSecondToMiliSecondConvertor.convertNanoSecondToSecond(duration)+ " miliseconds" + " for Merge Sort");
+        System.out.println( " " + Utils.toMiliseconds(duration)+ " miliseconds" + " for Merge Sort");
     }
 
     public static void split(int[] list) {

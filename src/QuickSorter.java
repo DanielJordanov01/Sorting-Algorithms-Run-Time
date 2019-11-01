@@ -1,5 +1,5 @@
-public class QuickSort {
-    public static void quickSorter(int[] list) {
+public class QuickSorter {
+    public static void sort(int[] list) {
 
         final long startTime = System.nanoTime();
 
@@ -8,7 +8,7 @@ public class QuickSort {
         // calculate the running time
         final long duration = System.nanoTime() - startTime;
         // display the needed time for the program to run
-        System.out.println( " " + NanoSecondToMiliSecondConvertor.convertNanoSecondToSecond(duration)+ " miliseconds" + " for Quick Sort");
+        System.out.println( " " + Utils.toMiliseconds(duration)+ " miliseconds" + " for Quick Sort");
     }
 
     public static int partition(int[] list, int low, int high) {

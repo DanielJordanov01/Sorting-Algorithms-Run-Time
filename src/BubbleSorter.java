@@ -1,5 +1,5 @@
-public class BubbleSort {
-    public static void bubbleSort(int[] list) {
+public class BubbleSorter {
+    public static void sort(int[] list) {
         // set starting time
         final long startTime = System.nanoTime();
         int n = list.length;
@@ -26,6 +26,6 @@ public class BubbleSort {
         // calculate the running time
         final long duration = System.nanoTime() - startTime;
         // display the needed time for the program to run
-        System.out.println( " " + NanoSecondToMiliSecondConvertor.convertNanoSecondToSecond(duration)+ " miliseconds" + " for Bubble Sort");
+        System.out.println( " " + Utils.toMiliseconds(duration)+ " miliseconds" + " for Bubble Sort");
     }
 }

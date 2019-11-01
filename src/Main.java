@@ -10,9 +10,7 @@ public class Main {
             list[i] = (int)(Math.random()*100 + 1);
         }
 
-
-
-        PrintingSortedArrayUsingAlgorithms.printingSortedArrayUsingAlgorithms(list, listCopy);
+        Utils.print(list, listCopy);
     }
 }
 

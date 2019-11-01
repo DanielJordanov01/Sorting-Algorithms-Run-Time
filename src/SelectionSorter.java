@@ -1,5 +1,5 @@
-public class SelectionSort {
-    public static void selectionSort(int[] list) {
+public class SelectionSorter {
+    public static void sort(int[] list) {
         // set starting time
         final long startTime = System.nanoTime();
         int n = list.length;
@@ -22,7 +22,7 @@ public class SelectionSort {
         // calculate the running time
         final long duration = System.nanoTime() - startTime;
         // display the needed time for the program to run
-        System.out.println( " " + NanoSecondToMiliSecondConvertor.convertNanoSecondToSecond(duration)+ " miliseconds" + " for Selection Sort");
+        System.out.println( " " + Utils.toMiliseconds(duration)+ " miliseconds" + " for Selection Sort");
 
     }
 }

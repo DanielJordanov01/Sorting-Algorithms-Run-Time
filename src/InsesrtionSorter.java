@@ -1,5 +1,5 @@
-public class InsesrtionSort {
-    public static void insertionSort(int list[]) {
+public class InsesrtionSorter {
+    public static void sort(int list[]) {
         // set starting time
         final long startTime = System.nanoTime();
         int n = list.length;
@@ -18,6 +18,6 @@ public class InsesrtionSort {
         // calculate the running time
         final long duration = System.nanoTime() - startTime;
         // display the needed time for the program to run
-        System.out.println( " " + NanoSecondToMiliSecondConvertor.convertNanoSecondToSecond(duration)+ " miliseconds" + " for Insertion Sort");
+        System.out.println( " " + Utils.toMiliseconds(duration)+ " miliseconds" + " for Insertion Sort");
     }
 }
