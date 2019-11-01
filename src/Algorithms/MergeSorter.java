@@ -1,3 +1,6 @@
+package Algorithms;
+import Utils.Utils;
+
 public class MergeSorter {
     public static void sort(int[] list) {
         final long startTime = System.nanoTime();

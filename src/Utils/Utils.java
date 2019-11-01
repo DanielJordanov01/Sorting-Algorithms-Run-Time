@@ -1,3 +1,7 @@
+package Utils;
+
+import Algorithms.*;
+
 public class Utils {
     public static void print(int[] list, int[] listCopy) {
         System.out.println("Sorted array: ");
@@ -18,7 +22,7 @@ public class Utils {
         System.arraycopy(list, 0, listCopy, 0, 10000);
 
         // Sorting listCopy using Insertion Sort Algorithm
-        InsesrtionSorter.sort(listCopy);
+        InsertionSorter.sort(listCopy);
 
         // Copying List into ListCopy
         System.arraycopy(list, 0, listCopy, 0, 10000);
@@ -27,7 +31,7 @@ public class Utils {
 
         // Copying List into ListCopy
         System.arraycopy(list, 0, listCopy, 0, 10000);
-        // Sorting listCopy using QuickSorter
+        // Sorting listCopy using Algorithms.QuickSorter
         QuickSorter.sort(listCopy);
     }
 

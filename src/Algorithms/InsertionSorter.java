@@ -1,4 +1,7 @@
-public class InsesrtionSorter {
+package Algorithms;
+import Utils.Utils;
+
+public class InsertionSorter {
     public static void sort(int list[]) {
         // set starting time
         final long startTime = System.nanoTime();

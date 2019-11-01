@@ -1,3 +1,6 @@
+package Algorithms;
+import Utils.Utils;
+
 public class SelectionSorter {
     public static void sort(int[] list) {
         // set starting time
