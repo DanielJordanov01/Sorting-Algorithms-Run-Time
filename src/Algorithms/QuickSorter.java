@@ -1,17 +1,8 @@
 package Algorithms;
-import Utils.Utils;
-
 public class QuickSorter {
     public static void sort(int[] list) {
 
-        final long startTime = System.nanoTime();
-
         sort(list, 0, list.length - 1);
-
-        // calculate the running time
-        final long duration = System.nanoTime() - startTime;
-        // display the needed time for the program to run
-        System.out.println( " " + Utils.toMiliseconds(duration)+ " miliseconds" + " for Quick Sort");
     }
 
     public static int partition(int[] list, int low, int high) {
