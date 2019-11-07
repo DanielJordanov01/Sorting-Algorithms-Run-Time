@@ -3,7 +3,7 @@ package Utils;
 import Algorithms.*;
 
 public class Utils {
-    public static void print(int[] list, int[] listCopy) {
+    public static void runAndDisplayAlgorithmsRunTime(int[] list, int[] listCopy) {
         System.out.println("Sorted array: ");
 
         // Copying List into ListCopy

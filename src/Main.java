@@ -12,7 +12,7 @@ public class Main {
             list[i] = (int)(Math.random()*100 + 1);
         }
 
-        Utils.print(list, listCopy);
+        Utils.runAndDisplayAlgorithmsRunTime(list, listCopy);
     }
 }
 
